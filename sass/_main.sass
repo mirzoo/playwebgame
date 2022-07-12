@@ -1,0 +1,65 @@
+.main
+    &-bg
+        background: url(../img/bg.png)
+        position: relative
+        background-size: cover
+        &::after
+            content: ""
+            width: calc(100% + 50px)
+            height: 18vh
+            background-image: url(../img/teaser-bottom.svg)
+            position: absolute
+            bottom: -2px
+            left: -50px
+            background-position: bottom left
+            background-size: cover
+            background-repeat: no-repeat
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        padding: 150px 16px
+    &-text
+        display: flex
+        flex-direction: column
+        &__title
+
+            font-weight: 700
+            font-size: 60px
+            line-height: 64px
+            color: #FFF
+        &__button
+            margin-top: 55px
+            width: 100%
+    &-content
+        &__img
+            width: 560px
+
+
+
+//best
+
+.best
+    &-wrap
+        text-align: center
+    &-item
+        display: flex
+        justify-content: space-between
+        &__wrap
+            max-width: 350px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__num
+            background-color: #f11313
+            width: 50px
+            height: 50px
+            border-radius: 100px
+            
+        &__title
+            font-size: 24px
+        &__subtitle
+            display: block
+            margin-top: 24px
+            font-size: 16px
