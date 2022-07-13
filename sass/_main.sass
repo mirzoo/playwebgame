@@ -1,65 +1,259 @@
 .main
-    &-bg
-        background: url(../img/bg.png)
-        position: relative
-        background-size: cover
-        &::after
-            content: ""
-            width: calc(100% + 50px)
-            height: 18vh
-            background-image: url(../img/teaser-bottom.svg)
-            position: absolute
-            bottom: -2px
-            left: -50px
-            background-position: bottom left
-            background-size: cover
-            background-repeat: no-repeat
     &-wrap
         display: flex
         justify-content: space-between
         align-items: center
-        position: relative
-        padding: 150px 16px
+        align-content: center
+        padding: 40px 16px
     &-text
         display: flex
         flex-direction: column
+        padding-right: 85px
         &__title
-
-            font-weight: 700
-            font-size: 60px
-            line-height: 64px
-            color: #FFF
-        &__button
-            margin-top: 55px
-            width: 100%
-    &-content
-        &__img
-            width: 560px
-
-
+            font-weight: 800
+            font-size: 40px
+            color: #071C35
+        &__subtitle
+            margin-top: 28px
+            font-size: 16px
+            color: #AAAAAA
+    &-img
+        width: 600px
 
 //best
 
 .best
     &-wrap
         text-align: center
+        padding: 40px 16px
+    &-title
+        font-size: 40px
+        font-weight: 800
+        color: #071C35
     &-item
         display: flex
         justify-content: space-between
+        margin-top: 80px
         &__wrap
-            max-width: 350px
+            width: 350px
             display: flex
             flex-direction: column
             align-items: center
+            background-color: #FFFFFF
+            padding-top: 24px
+            padding-bottom: 24px
+            box-shadow: 0px 35px 45px -7px rgba(0, 0, 0, 0.06)
         &__num
-            background-color: #f11313
-            width: 50px
-            height: 50px
             border-radius: 100px
-            
+            background-color: #FFF5E1
+            width: 110px
+            height: 110px
+            span
+                font-size: 60px
+                font-weight: 900
+                color: #FF916C
+                display: flex
+                align-items: center
+                justify-content: center
+                text-align: center
+                width: 100%
+                height: 100%
+        &__two
+            background-color: #E8FBFF
+            span
+                color: #1D68D1
+        &__three
+            background-color: #FFE5E5
+            span
+                color: #EE4141
         &__title
+            margin-top: 32px
             font-size: 24px
+            font-weight: 700
+            color: #071C35
         &__subtitle
             display: block
-            margin-top: 24px
+            margin-top: 16px
             font-size: 16px
+            line-height: 26px
+            color: #AAAAAA
+            max-width: 200px
+
+
+// games
+
+.games
+    background-color: #F3FDFF
+    margin-top: 100px
+    &-wrap
+        padding: 40px 16px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
+    &-title
+        text-align: center
+        font-size: 40px
+        font-weight: 800
+        color: #071C35
+    &-alert
+        max-width: 600px
+        display: flex
+        align-content: center
+        align-items: center
+        background-color: #fff
+        padding: 24px
+        margin-top: 50px
+        box-shadow: 0px 35px 45px -7px rgba(0, 0, 0, 0.06)
+        &__title
+            margin-left: 16px
+            font-size: 12px
+            color: #AAAAAA
+            font-weight: 400
+            line-height: 13px
+    &-hub
+        padding-top: 60px
+        display: flex
+        flex-flow: wrap
+    &-item
+        width: 250px
+        margin: 0 10px 20px
+        overflow: hidden
+        background-color: #fff 
+        filter: drop-shadow(0px 16px 22px rgba(9, 50, 133, 0.04))
+        transition: 0.2s
+        &:hover
+            filter: drop-shadow(0px 16px 22px rgba(9, 50, 133, 0.12))
+        &__img
+            width: 100%
+            height: 170px
+            background-size: auto
+            background-position: center
+            img
+                width: 100%
+                height: 100%
+        &__info
+            padding: 40px 20px 20px
+            text-align: center
+        &__title
+            color: #071C35
+            font-size: 18px
+            font-weight: 700
+            text-align: center
+            margin-bottom: 24px
+        &__btn
+            text-align: center
+            padding: 16px
+            font-weight: 700
+            display: block
+            color: #fff
+            background-color: #1965FD
+            border-radius: 8px
+            text-decoration: none
+            transition: 0.2s
+            &:hover
+                box-shadow: 0px 10px 16px rgba(25, 101, 253, 0.2)
+
+
+// features
+
+.features
+    &-wrap
+        padding: 120px 16px
+        display: flex
+        justify-content: space-between
+        align-content: center
+        align-items: center
+    &-item
+        align-content: center
+        text-align: center
+        padding: 16px
+        height: 270px
+        width: 240px
+        border-radius: 16px
+        background-color: #fff
+        &__img
+        &__title
+            font-size: 22px
+            font-weight: 800
+            margin-bottom: 16px
+            color: #ca2d22
+        &__subtitle
+            font-size: 16px
+            color: #000
+
+
+// type
+
+.type
+    &-wrap
+        padding: 50px 16px
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-content: center
+        align-items: center
+    &-title
+        font-size: 35px
+        font-weight: 800
+        color: #ca2d22
+    &-list
+        display: flex
+        flex-wrap: wrap
+        margin-top: 60px
+    &-item
+        color: #fff
+        background-color: #ca2d22
+        border-radius: 16px
+        font-size: 25px
+        font-weight: 600
+        text-align: center
+        padding: 30px
+        margin: 0 10px
+        width: 180px
+
+
+// prefooter
+
+.prefooter 
+    &-wrap
+        padding: 50px 16px
+        display: flex
+        justify-content: space-between
+        align-content: center
+        align-items: center
+    &-icon
+        padding-right: 100px
+        width: 100%
+    &-desc  
+        font-size: 14px
+        color: #000
+
+
+// footer
+
+.footer
+    background-color: #1a0303
+    color: #fff
+    &-wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        padding: 50px 16px
+        margin: 0 45px
+    &-item
+        width: 400px
+        &__title
+            margin-bottom: 24px
+        &__list
+            display: flex
+            align-content: center
+            align-items: start
+            margin-bottom: 16px
+        &__subtitle
+            margin-left: 16px
+            text-decoration: none
+            color: #fff
+
+    
