@@ -504,6 +504,7 @@ img {
   flex-direction: column;
   align-items: center;
   background-color: #FFFFFF;
+  border-radius: 4px;
   padding-top: 24px;
   padding-bottom: 24px;
   box-shadow: 0px 35px 45px -7px rgba(0, 0, 0, 0.06);
@@ -599,6 +600,7 @@ img {
   background-color: #fff;
   filter: drop-shadow(0px 16px 22px rgba(9, 50, 133, 0.04));
   transition: 0.2s;
+  border-radius: 4px;
 }
 .games-item:hover {
   filter: drop-shadow(0px 16px 22px rgba(9, 50, 133, 0.12));
@@ -649,25 +651,29 @@ img {
 .features-item {
   align-content: center;
   text-align: center;
-  padding: 16px;
+  padding: 24px 50px;
   height: 270px;
-  width: 240px;
-  border-radius: 16px;
+  max-width: 230px;
+  border-radius: 4px;
   background-color: #fff;
+  box-shadow: 0px 35px 45px -7px rgba(0, 0, 0, 0.06);
 }
 .features-item__title {
-  font-size: 22px;
-  font-weight: 800;
-  margin-bottom: 16px;
-  color: #ca2d22;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 32px;
+  color: #071C35;
 }
 .features-item__subtitle {
+  margin-top: 16px;
   font-size: 16px;
-  color: #000;
+  color: #AAAAAA;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .type-wrap {
-  padding: 50px 16px;
+  padding: 100px 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -675,9 +681,10 @@ img {
   align-items: center;
 }
 .type-title {
-  font-size: 35px;
+  text-align: center;
+  font-size: 40px;
   font-weight: 800;
-  color: #ca2d22;
+  color: #071C35;
 }
 .type-list {
   display: flex;
@@ -686,8 +693,8 @@ img {
 }
 .type-item {
   color: #fff;
-  background-color: #ca2d22;
-  border-radius: 16px;
+  background-color: #1965FD;
+  border-radius: 4px;
   font-size: 25px;
   font-weight: 600;
   text-align: center;
@@ -696,8 +703,11 @@ img {
   width: 180px;
 }
 
+.prefooter {
+  background-color: #F3FDFF;
+}
 .prefooter-wrap {
-  padding: 50px 16px;
+  padding: 100px 16px;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -708,12 +718,13 @@ img {
   width: 100%;
 }
 .prefooter-desc {
-  font-size: 14px;
-  color: #000;
+  font-size: 16px;
+  line-height: 26px;
+  color: #AAAAAA;
 }
 
 .footer {
-  background-color: #1a0303;
+  background-color: #1965FD;
   color: #fff;
 }
 .footer-wrap {
